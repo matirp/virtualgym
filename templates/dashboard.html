@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard - Sports Assessment</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome, {{ user }}!</h2>
+        <p>Select an assessment:</p>
+
+        <ul>
+            <li><a href="{{ url_for('pushups') }}">Push-up Test</a></li>
+            <!-- Future: add sit-ups, squats, etc. -->
+        </ul>
+
+        <br>
+        <a href="{{ url_for('logout') }}">Logout</a>
+    </div>
+</body>
+</html>
